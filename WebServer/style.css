@@ -57,14 +57,19 @@ body {
 }
 img {
   border-radius: 100%;
+  border: 3px solid #f2726a;
   width: 40%;
   transition: 0.5s;
+
   object-fit: cover;
   object-position: center;
 }
 img:hover {
-  border-radius: 10%;
-  width: 50%;
+  width: 60%;
+  height: 60%;
+  border-radius: 10px;
+  border: 3px solid #f2726a;
+  transform: unset;
 }
 .like {
   background-color: #1b1e29;
@@ -85,9 +90,14 @@ img:hover {
 
   font-size: 110%;
 }
-.icon {
-  font-size: 190%;
-  color: black;
-  margin-top: 20px;
-  cursor: pointer;
+.icon a {
+  text-decoration: none;
+  color: white;
+  margin: 25px 20px 400px;
+  display: inline-block;
+  font-size: 18px;
+  transition: 0.25s;
+}
+.icon a:hover {
+  color: red;
 }
