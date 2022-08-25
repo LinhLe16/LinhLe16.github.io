@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #4daf54;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #36393f;
+  animation: move infinite;
+  animation-duration: 1s;
+
+  height: 100vh;
+  overflow: hidden;
+}
+.card {
+  margin: 120px auto;
+  width: 300px;
+  height: 400px;
+  background-color: #282a36;
+  border-radius: 15px;
+  padding: 40px 20px;
+  color: white;
+  border: 1px solid #b22222;
+  animation: mymove infinite;
+  animation-duration: 4s;
+
+  position: relative;
+}
+
+@keyframes mymove {
+  0% {
+    border: 1px solid #b22222;
+  }
+  25% {
+    border: 1px solid green;
+  }
+  50% {
+    border: 1px solid goldenrod;
+  }
+  75% {
+    border: 1px solid #b22222;
+  }
+  100% {
+    border: 1px solid #b22222;
+  }
+}
+.inf {
+  text-align: center;
+}
+.name {
+  font-size: 140%;
+  transition: 0.5s;
+}
+img {
+  border-radius: 100%;
+  width: 40%;
+  transition: 0.5s;
+  object-fit: cover;
+  object-position: center;
+}
+img:hover {
+  border-radius: 10%;
+  width: 50%;
+}
+.like {
+  background-color: #1b1e29;
+  border-radius: 40px;
+  font-size: 90%;
+  border: 1px solid #a81c8d;
+  box-sizing: border-box;
+}
+.sothich {
+  text-align: center;
+  font-size: 110%;
+
+  margin-top: 10px;
+}
+.thich {
+  text-align: center;
+  margin-top: 6px;
+
+  font-size: 110%;
+}
+.icon {
+  font-size: 190%;
+  color: black;
+  margin-top: 20px;
+  cursor: pointer;
+}
